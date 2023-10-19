@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/* About */
+
+#about-center{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../image/about.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#about-center ,.ah ,.ap{
+    font-family: cursive;
+    font-weight: 700;
+    padding: 2rem;
+}
+
+#about-center .ah{
+    font-size: 3rem;
+    color: blue;
+}
+
+
+/* Serviices */
+
+#services-center{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+#wrapper{
+    box-shadow: 0px 0px 10px blue;
+    width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    padding: 3rem;
+}
+
+#wrapper h2{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    margin:1rem 0;
+}
+
+#work .card1{
+    width: calc(100%/3 - 2rem);
+    height: 30vh;
+    float: left;
+    margin: 1rem;
+    box-shadow: 0px 0px 10px blue;
+    border-radius: 10px;  
+    position: relative;
+    transition: transform .3s ease-in;
+    background-image: url('../image/travel.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#work .card1:hover{
+    top: -10px;
+}
+
+#work h3{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#work p,h3{
+    text-align: center;
+    padding: 1rem 3rem;
+    font-family: cursive;
+    color: chocolate;
+}
+
+
+/* contact page */
+
+#contact-center{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../image/contact.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact-center #cover{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container{
+    width: 800px;
+    background:rgba(0, 0, 0, 0.3);
+    height: 70vh;
+    border-radius:10xp ;
+    box-shadow: 0 0 10px blue;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#form-container #left{
+    width: 400px;
+    height: 100%;
+    background-color: red;
+    float: left;
+}
+#form-container #left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#form-container #right{
+    width: 400px;
+    height: 100%;
+    float: left;
+    /* background: blue; */
+    padding: 1rem;
+}
+
+#form-container #right h2{
+    font-weight: bold;
+    font-family: cursive;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
+#form-container #right input,textarea{
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+    background-color: rgba(168, 154, 182, 0.479);
+    padding-inline-start: 1rem;
+    box-shadow: 0 0 10px rgb(109, 91, 108);
+    padding:.7rem 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+#form-container #right [type="submit"]{
+    cursor: pointer;
+    background-color: rgba(168, 154, 182, 0.479);
+    font-weight: 800;
+    
+}
+#form-container #right [type="submit"]:hover{
+    background-color: rgba(168, 154, 182, 0.774);
+}
+
+*::placeholder{
+    color: rgba(20, 19, 19, 0.578);
+    font-weight: bold;
+    font-family: cursive;
+}
+
+
